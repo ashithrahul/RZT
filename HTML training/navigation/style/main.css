@@ -1,0 +1,40 @@
+/* Rest css code start */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/* Rest css code end */
+
+
+
+
+/* common css content start */
+
+.fleft{
+    float: left;
+}
+
+.fright{
+    float: right;
+}
+
+.layout-container{
+    margin: auto;
+    width: 1000px;
+}
+
+
+/* common css content end */
+
+
+/* navigation start */
+
+.navigation-primary{
+    background-color: black;
+    height: 50px;
+}

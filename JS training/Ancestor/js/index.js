@@ -12,9 +12,9 @@ params:type
 class Person{
 
     constructor(name,people_tree,age_tree){
-        this.name = name;
+        this.name = "Ashith"
         this.ancestors = this.getAncestors(name,people_tree);
-        this.ages = this.getAges(this.ancestors,age_tree);
+        this.ages = this.getAges(this.ancestors,ages);
     }
 
     /*
@@ -29,9 +29,9 @@ class Person{
      */
 
     getAncestors(name,people_tree){
-        var response=[];
+        let response=[];
         response.push(name)
-        for(var key in people_tree){
+        for(let key in people_tree){
             if(response.indexOf(key) != -1){
                 response.push(people_tree[key])
             }
@@ -51,8 +51,9 @@ class Person{
 
          */
     getAges(ancestors,ages){
-        var x = ancestors.map(function (ancestor, index, array) {
-            if(ancestor !='undefined' && ages[ancestor]){
+
+        let x = ancestors.map((ancestor) => {
+            if(ancestor  && ages[ancestor]){
                 return ages[ancestor];
             }
         });
@@ -83,5 +84,5 @@ var ages = {
     'vishal': 5
 }
 
-var sandeep = new Person('sandeep', peopleTree, ages);
+let sandeep = new Person('sandeep', peopleTree, ages);
 console.log(sandeep.ancestors);

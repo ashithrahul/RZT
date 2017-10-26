@@ -1,10 +1,9 @@
 /*****************  1 subquestion  *****************/
 
 /* input array */
-var input = ["vinoj, arjun", "dixy", "amala"];
-
+const input_first = ["vinoj, arjun", "dixy", "amala"];
 /* input itreation loop start*/
-var output = input.reduce(function(accumulator, currentValue){
+const output_first = input_first.reduce((accumulator, currentValue)=>{
 
     //spliting  each item with "," return array merge it with accumulator
     return accumulator.concat(currentValue.split(","));
@@ -13,7 +12,7 @@ var output = input.reduce(function(accumulator, currentValue){
 /* input itreation loop end */
 
 
-console.log(output);
+console.log(output_first);
 
 
 
@@ -22,13 +21,13 @@ console.log(output);
 /*****************  2 subquestion  *****************/
 
 /* input array */
-var input = [ [{name: "vinoj"}, {name: "dixy"}], {name: "amala"}, {name: "arjun"}];
+const input_second = [ [{name: "vinoj"}, {name: "dixy"}], {name: "amala"}, {name: "arjun"}];
 
 /* input itreation loop start*/
-var output = input.reduce(function(accumulator, currentValue){
+const output_second = input_second.reduce((accumulator, currentValue)=>{
     return accumulator.concat(currentValue);
 },[]);
 /* input itreation loop end */
 
-console.log(JSON.stringify(output));
+console.log(JSON.stringify(output_second));
 
