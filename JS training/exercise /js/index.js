@@ -15,9 +15,6 @@ const output_first = input_first.reduce((accumulator, currentValue)=>{
 console.log(output_first);
 
 
-
-
-
 /*****************  2 subquestion  *****************/
 
 /* input array */

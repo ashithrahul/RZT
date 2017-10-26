@@ -11,9 +11,10 @@ a{
 /* Rest css code end */
 
 
-
-
 /* common css content start */
+body{
+    font-family:Arial;
+}
 
 .fleft{
     float: left;
@@ -35,6 +36,34 @@ a{
 /* navigation start */
 
 .navigation-primary{
+    height: 60px;
     background-color: black;
-    height: 50px;
 }
+.navigation-wrapper{
+    margin: auto;
+    width: 1000px;
+}
+.navigation-link{
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+}
+
+/* hover effect start */
+a:hover {
+    position: relative;
+}
+a:hover:after {
+    content: url(../image/arrow.png); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 45px;
+}
+/* hover effect end */
+
+
+/* navigation bar end */
