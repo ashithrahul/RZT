@@ -1,0 +1,102 @@
+/* Rest css code start */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/* Rest css code end */
+
+
+
+
+/* common css content start */
+body{
+    background-color: rgb(220, 230, 238);
+    line-height: 2em;
+    font-family: arial;
+    color:rgb(113, 113, 113);
+}
+
+.fleft{
+    float: left;
+}
+
+.fright{
+    float: right;
+}
+
+.layout-container{
+    margin: auto;
+    width: 1000px;
+}
+
+.page-wrapper{
+    background-color: rgb(255, 255, 255);
+    padding: 1.5em;
+}
+
+/* common css content end */
+
+
+
+
+/* header css start */
+.header-main{
+    border-bottom:3px solid rgb(38, 180, 185);
+    padding: 20px 0px;
+}
+
+.header-main h1{
+    color: rgb(20, 67, 88);
+}
+
+/* header css end */
+
+
+
+/* picture banner start */
+.picture-section{
+    padding: .5em;
+    margin: auto;
+    padding: 20px 0px;
+}
+.picture-section-img{
+    width: 100%;
+}
+/* picture banner end */
+
+
+
+/* Blog details start */
+.img-para{
+    padding: 10px;
+    width: 40%;
+}
+
+.listing{
+    margin-left: 0em;
+    padding-left: 1em;
+}
+.blog-details u {
+    border-bottom: 3px solid black;
+    text-decoration: none;
+}
+/* Blog details end */
+
+
+/* footer styles start */
+
+.footer-common{
+    border-top:3px solid rgb(38, 180, 185);
+    padding: 20px 0px;
+}
+
+footer,
+footer a{
+    color:rgb(113, 113, 113);
+}
+/* footer styles end */
