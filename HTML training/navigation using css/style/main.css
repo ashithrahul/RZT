@@ -7,7 +7,9 @@
 a{
     text-decoration: none;
 }
-
+*{
+    box-sizing: border-box;
+}
 /* Rest css code end */
 
 
@@ -39,8 +41,8 @@ body{
     background-color: black;
 }
 .header-wrapper{
-    margin: auto;
-    width: 1000px;
+
+
 }
 
 /* header end  */
@@ -51,37 +53,55 @@ body{
 .navigation-primary{
     padding-top: 30px;
 }
+
 .navigation-wrapper{
     margin: auto;
     width: 1000px;
 }
+
 .navigation-link{
-    cursor: pointer;
+    height: 27px;
+    display: inline-block;
     font-weight: bold;
     color: white;
     font-size: 13px;
-    padding: 0px 5px 0px 5px;
+    padding: 0px 5px;
     position: relative;
 }
 
+/* active class style */
+
 .active:after{
-    content: url(../image/arrow.png); /* no need for qoutes */
-    display: block;
     position: absolute;
+    display: block;
+
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid white;
+    border-left: 6px solid transparent;
+
     transform: translateX(-50%);
     left: 50%;
-    top: 15px;
+    bottom: 0;
+    content: '';
 }
+
 /* hover effect start */
 
-a:hover:after {
-    content: url(../image/arrow.png); /* no need for qoutes */
-    display: block;
+.navigation-link:hover:after {
+
     position: absolute;
+    display: block;
+
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid white;
+    border-left: 6px solid transparent;
+
     transform: translateX(-50%);
     left: 50%;
-    top: 15px;
+    bottom: 0px;
+    content: '';
 }
+
 /* hover effect end */
 
 
