@@ -1,0 +1,186 @@
+/* Rest css code start */
+
+html{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* Rest css code end */
+
+
+
+/* common css content start */
+body{
+    font-family: 'Dosis', sans-serif;
+    background-image: url("../image/bg_main.png");
+    height: 100%;
+}
+
+.fleft{
+    float: left;
+}
+
+.fright{
+    float: right;
+}
+
+.layout-container{
+    height: 100%;
+    padding:150px 220px 0px 50px;
+    width: calc(100% - 250px);
+}
+.active{
+    background-color: black;
+
+}
+.main-wrapper{
+    height: 100%;
+    min-width: 1000px;
+    min-height: 600px;
+    overflow: auto;
+}
+/* common css content end */
+
+
+
+/* Header css start */
+.aside-primary{
+    position: relative;
+    height: 100%;
+    background-image: url("../image/10.png");
+    width: 235px ;
+    background-color: rgba(0, 0, 0, 0.79);
+    float: left;
+}
+
+.logo-primary{
+    margin:40px auto;
+}
+
+/* Header css end */
+
+
+/* navigation css */
+
+.navigation-primary{
+    padding-left: 50px;
+}
+
+.navigation-link{
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.navigation-link-text{
+    cursor: pointer;
+    padding: 1px 8px;
+    border-radius: 5px;
+}
+
+.navigation-link:hover:after{
+    position: absolute;
+    display: block;
+
+    border-top: 6px solid transparent;
+    border-right: 6px solid white;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid transparent;
+
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0px;
+    content: '';
+}
+
+.navigation-link-text:hover{
+    background-color: black;
+}
+
+.navigation-link-active:after{
+    position: absolute;
+    display: block;
+
+    border-top: 6px solid transparent;
+    border-right: 6px solid white;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid transparent;
+
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0px;
+    content: '';
+}
+.navigation-link:last-child{
+    margin: 0px;
+}
+/*  navigation end */
+
+/* footer start */
+
+.footer-primary{
+    position: absolute;
+    width:100%;
+    bottom: 10px;
+}
+.copy{
+    left: 15%;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.copy-highlight{
+    color: #caaf3c;
+}
+
+/* footer end */
+
+
+/* layout conatiner start */
+
+.heading-main{
+    color: #2f2f2f;
+    font-size: 80px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    margin-bottom: -10px;
+}
+
+.banner{
+    color: #2b2b2b;
+    font-size: 29px;
+    letter-spacing: 0.02em;
+    font-family: "Noto Serif";
+    margin:10px 0px;
+    padding: 12px 0px;
+    border: 3px solid #dcb41e;
+    border-left: none;
+    border-right: none;
+}
+
+.para-primary{
+    line-height: 45px;
+    color: #303940;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.para-secondary{
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    font-family: "Lato";
+    color: #3b413d;
+}
+
+/* layout conatiner end */
